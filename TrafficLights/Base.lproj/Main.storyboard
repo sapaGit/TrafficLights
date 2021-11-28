@@ -43,26 +43,36 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afj-38-1Y3">
-                                <rect key="frame" x="61" y="690" width="292" height="60"/>
+                                <rect key="frame" x="61" y="606" width="292" height="60"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="WLD-jd-Y5x"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="292" id="yeW-fS-jq3"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonTaped" destination="BYZ-38-t0r" eventType="touchUpInside" id="SEf-Gb-JTN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Afj-38-1Y3" firstAttribute="top" secondItem="Wdz-sl-ub8" secondAttribute="bottom" constant="184" id="3N5-Xy-HsI"/>
+                            <constraint firstItem="Afj-38-1Y3" firstAttribute="top" secondItem="Wdz-sl-ub8" secondAttribute="bottom" constant="100" id="3N5-Xy-HsI"/>
                             <constraint firstItem="Afj-38-1Y3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4Wp-sG-ATT"/>
                             <constraint firstItem="MGe-83-zHk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xc9-8B-IjV"/>
                             <constraint firstItem="4zF-kc-Dnx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="qUG-KK-5at"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="Afj-38-1Y3" id="qrt-Yg-qrz"/>
+                        <outlet property="greenLabel" destination="Wdz-sl-ub8" id="aws-Hp-orR"/>
+                        <outlet property="redLabel" destination="4zF-kc-Dnx" id="DkG-qJ-WCz"/>
+                        <outlet property="yellowLabel" destination="W3Y-Bx-sqh" id="Xre-iZ-973"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
